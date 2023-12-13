@@ -50,3 +50,22 @@ Além disso, ao treinar um modelo, é possível apenas clicar na opção de trei
 
 Após o treinamento, é possível já ter uma previsão de como fica o projeto funcionando, para conferir se tudo está funcionando de maneira correta. Por fim, é só ir na aba de exportar o modelo, onde tem um código em HTML, com JavaScript dentro dele também. No entanto, ele assim não funciona; tem que fazer o upload do shareable link e inseri-lo no código. Fazendo isso, é só compilar e executar o projeto que ele funciona. Entretanto, para uma melhoria visual, melhoramos o front-end dele usando CSS.
 
+<h1 align="left">Autentificação Via E-mail</h1>
+
+A implementação da autenticação via e-mail foi realizada utilizando Node.js e Express, operando em conjunto com um banco de dados seguro que armazena os e-mails e senhas dos usuários devidamente cadastrados, protegidos por meio de tokens para garantir a segurança do processo.
+
+Neste contexto, o fluxo inicia quando o cliente envia uma requisição contendo os dados de autenticação. Essa requisição é direcionada para o middleware e, em seguida, para a REST API, que por sua vez interage com o banco de dados. Uma vez validadas todas as informações corretas, um token é gerado e enviado de volta através do caminho inverso, confirmando a autenticação bem-sucedida.
+
+Esta etapa de autenticação via e-mail é crucial para o prosseguimento do processo de verificação, que então passa para a fase de reconhecimento facial. Essa abordagem em duas etapas, combinando e-mail e reconhecimento facial, reforça a segurança do sistema e garante a autenticidade do acesso ao sistema.
+
+<h1 align="left">Conclusão</h1>
+
+O projeto de Autenticação de Dois Fatores apresenta uma abordagem robusta e inovadora na garantia de segurança em sistemas distribuídos. Ao integrar a autenticação via e-mail e o reconhecimento facial, este trabalho demonstra uma arquitetura bem estruturada, possibilitando uma verificação em duas etapas para conceder acesso.
+
+A utilização do Teachable Machine, uma plataforma intuitiva do Google para treinamento de inteligência artificial, ofereceu uma solução eficiente para o reconhecimento facial. Ao criar classes para cada membro do grupo e para casos "diferentes", o projeto conseguiu treinar o modelo de maneira abrangente, melhorando assim sua precisão.
+
+A etapa de autenticação via e-mail, implementada com Node.js e React, em conjunto com um banco de dados seguro, adiciona uma camada adicional de segurança. O uso de tokens para validar os dados dos clientes reforça a proteção dos sistemas contra acesso não autorizado.
+
+No entanto, mesmo com a eficácia demonstrada, existem oportunidades de melhoria. A integração mais fluida entre o modelo treinado no Teachable Machine e o processo de exportação para o código final poderia ser aprimorada para simplificar a implementação.
+
+Em resumo, o projeto oferece uma abordagem abrangente e promissora para a autenticação de dois fatores, explorando tecnologias modernas e ferramentas de aprendizado de máquina, reforçando a segurança e demonstrando potencial para desenvolvimentos futuros.
