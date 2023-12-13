@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reconhecimento Facial</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="home-container">
+      <div class="home-content-container">
+        <h1>Modelo de Imagem Teachable Machine</h1>
+        <p>Trabalho feito por:</p>
+        <ul>
+          <li>Diego Marques Andrade</li>
+          <li>Tiago Viegas Pires Lage</li>
+          <li>Tulio Oliveira Cruz</li>
+        </ul>
+        <button id="start-button" class="btn" type="button" onclick="init()">
+          Começar
+        </button>
+      </div>
+      <div class="image-container">
+        <img src="images/ai.svg" alt="ai image" />
+      </div>
+    </div>
+    <div class="recognition-container">
+      <div id="webcam-container"></div>
+      <div id="label-container"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
