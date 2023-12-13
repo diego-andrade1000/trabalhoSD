@@ -5,6 +5,31 @@ let model, webcam, labelContainer, maxPredictions;
 
 // Load the image model and setup the webcam
 async function init() {
+
+  const email = document.querySelector('input[name="email"]').value;
+  const password = document.querySelector('input[name="password"]').value;
+  
+
+  const formData = {
+    email: email,
+    password: password
+  };
+  axios.post('http://localhost:3332/login', formData)
+    .then(response => {
+      if(response.status === 200){
+        console.log('login feito com sucesso:', response);
+        reconhecimento();
+      }else{
+        console.log('falha no login', response);
+      }
+    })
+    .catch(error => {
+      console.error('Login failed:', error.message);
+    });
+}
+
+
+async function reconhecimento() {
   const modelURL = URL + "model.json";
   const metadataURL = URL + "metadata.json";
 
