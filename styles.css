@@ -11,7 +11,7 @@ body {
 .btn {
   font-family: Roboto, sans-serif;
   font-weight: 0;
-  font-size: 14px;
+  font-size: 15px;
   color: #fff;
   background-color: #0066cc;
   padding: 10px 30px;
@@ -23,9 +23,8 @@ body {
   transition: 1000ms;
   transform: translateY(0);
   cursor: pointer;
-  margin: 40px;
-  width: 300px;
-  font-size: 20px;
+  margin: 20px;
+  width: 200px;
 }
 
 .btn:hover {
@@ -55,13 +54,23 @@ body {
   width: 50%;
 }
 
+.form-container {
+  font-size: 18px;
+  padding-top: 50px;
+}
+
+.form-container input {
+  width: 150px;
+  height: 20px;
+}
+
 .home-content-container h1 {
-  font-size: 50px;
+  font-size: 45px;
 }
 
 .home-content-container p,
 li {
-  font-size: 28px;
+  font-size: 22px;
 }
 
 .image-container {
@@ -78,13 +87,13 @@ li {
 
 .active {
   margin: 100px auto;
-  width: 350px;
-  height: 350px;
+  width: 400px;
+  height: 400px;
   border-radius: 28px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
   align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
   background-color: #fff;
 }

@@ -32,6 +32,11 @@ async function init() {
     // and class labels
     labelContainer.appendChild(document.createElement("div"));
   }
+
+  const button = document.createElement("button");
+  button.innerText = "Login";
+  button.className = "btn";
+  document.getElementById("button-container").appendChild(button);
 }
 
 async function loop() {

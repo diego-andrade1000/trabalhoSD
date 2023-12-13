@@ -16,9 +16,34 @@
           <li>Tiago Viegas Pires Lage</li>
           <li>Tulio Oliveira Cruz</li>
         </ul>
-        <button id="start-button" class="btn" type="button" onclick="init()">
-          Começar
-        </button>
+
+        <div class="form-container">
+          <form method="post">
+            <label for="uname"><b>Email</b></label>
+            <input
+              type="text"
+              placeholder="Digite seu email"
+              name="uname"
+              required
+            />
+
+            <label for="psw"><b>Senha</b></label>
+            <input
+              type="password"
+              placeholder="Digite sua senha"
+              name="psw"
+              required
+            />
+            <button
+              id="start-button"
+              class="btn"
+              type="submit"
+              onclick="init()"
+            >
+              Login
+            </button>
+          </form>
+        </div>
       </div>
       <div class="image-container">
         <img src="images/ai.svg" alt="ai image" />
@@ -27,6 +52,7 @@
     <div class="recognition-container">
       <div id="webcam-container"></div>
       <div id="label-container"></div>
+      <div id="button-container"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
